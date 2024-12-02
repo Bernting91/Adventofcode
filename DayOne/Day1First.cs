@@ -6,15 +6,15 @@ using System.Linq;
 
 namespace Adventofcode
 {
-    internal class Day1
+    internal class Day1First
     {
         List<int> leftList;
         List<int> rightList;
 
-        public Day1()
+        public Day1First()
         {
-            leftList = ReadFromFile.ReadIntegersFromFile(@"C:\Users\bernt\source\repos\Adventofcode\Services\LeftColumn.txt");
-            rightList = ReadFromFile.ReadIntegersFromFile(@"C:\Users\bernt\source\repos\Adventofcode\Services\RightColumn.txt");
+            leftList = Day1ReadFromFile.ReadIntegersFromFile(@"C:\Users\bernt\source\repos\Adventofcode\DayOne\Services\LeftColumn.txt");
+            rightList = Day1ReadFromFile.ReadIntegersFromFile(@"C:\Users\bernt\source\repos\Adventofcode\DayOne\Services\RightColumn.txt");
 
             int totalDistance = CalculateTotalDistance(leftList, rightList);
             Console.WriteLine($"Total distance: {totalDistance}");

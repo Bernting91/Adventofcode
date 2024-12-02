@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace Adventofcode
 {
-    internal class Day2
+    internal class Day1Second
     {
         List<int> leftList;
         List<int> rightList;
 
-        public Day2()
+        public Day1Second()
         {
-            leftList = ReadFromFile.ReadIntegersFromFile(@"C:\Users\bernt\source\repos\Adventofcode\Services\LeftColumn.txt");
-            rightList = ReadFromFile.ReadIntegersFromFile(@"C:\Users\bernt\source\repos\Adventofcode\Services\RightColumn.txt");
+            leftList = Day1ReadFromFile.ReadIntegersFromFile(@"C:\Users\bernt\source\repos\Adventofcode\DayOne\Services\LeftColumn.txt");
+            rightList = Day1ReadFromFile.ReadIntegersFromFile(@"C:\Users\bernt\source\repos\Adventofcode\DayOne\Services\RightColumn.txt");
 
             int similarityScore = CalculateSimilarityScore(leftList, rightList);
             Console.WriteLine($"Similarity score: {similarityScore}");
