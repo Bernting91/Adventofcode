@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Adventofcode.Services
 {
-    internal class ReadFromFile
+    internal class Day1ReadFromFile
     {
         public static List<int> ReadIntegersFromFile(string filePath)
         {
