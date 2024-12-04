@@ -50,5 +50,6 @@ namespace Adventofcode.DayTwo
             }
             return safeCount;
         }
+        
     }
 }
